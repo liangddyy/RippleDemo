@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.liangddyy.rippledemo.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/ripple_bg"
+        android:padding="10dp"
+        android:text="使用RippleDrawable类实现" />
+
+    <com.liangddyy.rippledemo.MaterialLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:background="#4278c2"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:text="自定义布局实现1" />
+            <Button
+                android:background="#da5858"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:text="自定义布局实现2" />
+        </LinearLayout>
+    </com.liangddyy.rippledemo.MaterialLayout>
+
+    <com.liangddyy.rippledemo.RippleView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        rv_centered="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#4ce65e"
+            android:text="第三方库实现"/>
+    </com.liangddyy.rippledemo.RippleView>
+</LinearLayout>
